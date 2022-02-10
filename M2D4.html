@@ -7,6 +7,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./M2D4_files/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <title>Teams</title>
+
   <style type="text/css">
 @font-face {
   font-weight: 400;
@@ -38,9 +40,138 @@
   font-family: 'Circular-Loom';
 
   src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Black-bf067ecb8aa777ceb6df7d72226febca.woff2') format('woff2');
-}</style><script style="display: none;">var tvt = tvt || {}; tvt.captureVariables = function(a){for(var b=
+}
+
+
+*,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+          margin: 0;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style><script style="display: none;">var tvt = tvt || {}; tvt.captureVariables = function(a){for(var b=
 new Date,c={},d=Object.keys(a||{}),e=0,f;f=d[e];e++)if(a.hasOwnProperty(f)&&"undefined"!=typeof a[f])try{var g=[];c[f]=JSON.stringify(a[f],function(h,k){try{if("function"!==typeof k){if("object"===typeof k&&null!==k){if(k instanceof HTMLElement||k instanceof Node||-1!=g.indexOf(k))return;g.push(k)}return k}}catch(m){}})}catch(h){}a=document.createEvent("CustomEvent");a.initCustomEvent("TvtRetrievedVariablesEvent",!0,!0,{variables:c,date:b});window.dispatchEvent(a)};window.setTimeout(function() {tvt.captureVariables({'dataLayer.hide': (function(a){a=a.split(".");for(var b=window,c=0;c<a.length&&(b=b[a[c]],b);c++);return b})('dataLayer.hide'),'gaData': window['gaData'],'dataLayer': window['dataLayer']})}, 2000);</script></head>
-  <body cz-shortcut-listen="true">
+  
+<body cz-shortcut-listen="true">
+
+<div>
+  <h1 style="text-align: center;">TEAM GENERATOR</h1>
+    <div class="container">
+      <h2>Students</h2>
+
+
+      <div>
+        <input id="input" type="text">
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="sendToWaiting()">Send to Waiting List</button>
+        </div>
+      </div>
+
+      <h2>Waiting List</h2>
+      <button class="btn btn-outline-secondary" type="button" id="button-addon2">Assign</button>
+      <ul class="list-group">
+        <li class="list-group-item">Mario</li>
+        <li class="list-group-item">Fabiana</li>
+        <li class="list-group-item">Giorgia</li>
+        <li class="list-group-item">Yuki</li>
+        <li class="list-group-item">Ana</li>
+        <li class="list-group-item">Amina</li>
+        <li class="list-group-item">Diega</li>
+        <li class="list-group-item">Cecil</li>
+        <li class="list-group-item">Aziza</li>
+        <li class="list-group-item">Lucius</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container">
+    <p class="RandOptions-row"> 
+      <label for="rand_options_grp">Groups</label> 
+      <input id="rand_options_grp" type="number" name="grp" value="4" class=""> 
+    </p>
+  </div>
+
+<!--TEAM AREA-->
+  <div class="container">
+    <h2 style="text-align: center;">Randomly generated teams</h2>
+    <div class="row">
+     <div class="col-3">
+       <h4>Team 1</h4>
+     </div>
+     <div class="col-3">
+      <h4>Team 2</h4>
+    </div>
+    <div class="col-3">
+      <h4>Team 3</h4>
+    </div>
+    <div class="col-3">
+      <h4>Team 4</h4>
+    </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+<script>
+
+let students= ["Ana", "Mario", "Yosef", "Christian", "Abigail", "Jacob",]
+let students1= ["Brian", "Gina", "Natasha", "Peter", "Tetyana"]
+
+  const sendToWaiting = function () {
+
+         let arrayOfNames =[]
+          let namesOfList = document.getElementById('input').value
+          arrayOfNames.push(namesOfList)
+        
+        
+
+  }
+
+
+const groups =function (){
+
+  let arrayOfGroups =[]
+
+  let numberOfGroups = document.getElementById('rand_options_grp')
+
+  arrayOfGroups.push(numberOfGroups)
+}
+
+
+
+</script>
+
+
+
+
     <script src="./M2D4_files/jquery-3.5.1.slim.min.js.download" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="./M2D4_files/bootstrap.bundle.min.js.download" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
   
